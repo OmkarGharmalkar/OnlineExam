@@ -1,0 +1,35 @@
+
+<div class="col-lg-4 offset-lg-4">
+    <h2>Student Dashboard</h2>
+    </div>
+    <div class="col-lg-4 offset-lg-4">
+    <form (ngSubmit)="onMySubmit()">
+        <div class="form-group">
+            <label for="exampleInputRollno1">Roll no.</label>
+            <input type="text" class="form-control" [formControl]="rollno" id="exampleInputRollno1"  name="rollno" placeholder="Enter Roll no.">
+        </div>
+        <div class="form-group">
+          <label for="exampleUsername1">Username</label>
+         
+          <input type="email" class="form-control" [formControl]="username" id="exampleUsername1" name="username" placeholder="Enter Username">
+         </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" style="color: ivory;">Password</label>
+        
+          <input type="password" class="form-control" [formControl]="password" id="exampleInputPassword1" name="password" placeholder="Enter Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+          <label class="form-check-label" for="exampleCheck1"style="color:ivory;">I am no a robot</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Signup</button>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+       <br/>
+      </form>
+    </div>
+    

@@ -1,0 +1,42 @@
+<br/>
+<div class="row">
+<div class="form-group offset-1">
+  <button id="startButton" type="submit" (click)="onStart()" class="btn btn-primary">Start Exam</button>
+ 
+</div>
+
+<div class="col-md-4 offset-md-3" id="myP1" style="visibility: hidden; color: maroon; size: 20px;" >Exam in Progress
+
+  <button  id="submitButton" type="submit" (click)="sendAnswers()" class="btn btn-danger offset-md-4" style="visibility: hidden;">Submit Exam</button>
+   
+</div>
+<div class="container">
+  <p id="myP2" style="visibility: hidden;">Question no: {{i}}</p>
+    
+     
+<div  id="que" style="visibility: hidden;">{{que}}</div>
+<br/>
+<div class="col-lg-4 ">
+<input type="text" class="form-control" style="visibility: hidden;" [formControl]="ans" id="ans"  name="ans" placeholder="Enter option no.">
+</div>
+
+<br/>
+<br/>
+<br/>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+<br/>
+
+
+</div>
+<div class="col-md-4 offset-md-8">  
+  <button  id="nextQue" type="submit" (click)="getQuestion()" class="btn btn-success">Next Question</button>
+        </div>
+
+        <br/>
+        
